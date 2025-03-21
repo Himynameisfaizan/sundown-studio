@@ -1,0 +1,747 @@
+@font-face {
+    font-family: "neue";
+    src: url(./fonts/64d3dd9edfb41666c35b15bf_NeueHaasDisplay-Mediu.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "neue";
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+    background-color: #efeae3;
+    height: 100%;
+    position: relative;
+    z-index: -9;
+}
+
+
+.page-one {
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    height: 160px;
+    /* background-color: beige; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+nav .nav-head img {
+    cursor: pointer;
+    padding: 15px;
+}
+
+nav .nav-side {
+    overflow: hidden;
+    display: flex;
+
+}
+
+nav .nav-side a {
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 1.2vw;
+    padding: 12px;
+    /* background-color: red; */
+    color: rgb(48, 47, 47);
+    border: 1px rgba(0, 0, 0, 0.313) solid;
+    border-radius: 60px;
+    position: relative;
+    transition: 0.4s;
+}
+
+nav .nav-side a:hover {
+    background-color: black;
+    color: white;
+}
+
+.page-main {
+    width: 100%;
+    height: calc(100vh - 160px);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.page-main .para p {
+    width: 70%;
+    /* background-color: red ; */
+    padding: 10px 30px;
+    font-size: 2vw;
+    font-weight: bold;
+    line-height: 2vw;
+    letter-spacing: -1px;
+}
+
+.page-head h2 {
+    font-size: 11vw;
+    text-align: right;
+    /* background-color: blue; */
+    margin-right: 2.5vw;
+    margin-bottom: 1vw;
+    line-height: 9vw;
+}
+
+.page-main2 {
+    position: relative;
+}
+
+.page-main-line {
+    width: 96%;
+    position: absolute;
+    height: 1px;
+    background-color: rgba(18, 18, 18, 0.28);
+    margin-left: 2%;
+    /* margin-top: 3vw; */
+    z-index: -1;
+}
+
+.page-main2 .color {
+    /* position: absolute; */
+    margin-right: 40px;
+    margin-top: 80px;
+}
+
+.color .child1 {
+    position: absolute;
+    margin-top: -15%;
+    width: 650px;
+    /* margin-right:8%; */
+    height: 500px;
+    border-radius: 50%;
+    background-color: orangered;
+    filter: blur(20px);
+    animation-name: child1;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: -1;
+}
+
+.color .child2 {
+    position: absolute;
+    width: 550px;
+    /* margin-right:8%; */
+    height: 600px;
+    border-radius: 50%;
+    margin-top: -15%;
+    background-color: orangered;
+    filter: blur(20px);
+    animation-name: child2;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: -1;
+
+}
+
+.color .child3 {
+    margin-top: -15%;
+    width: 550px;
+    /* margin-right:8%; */
+    height: 500px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: orangered;
+    filter: blur(20px);
+    animation-name: child3;
+    z-index: -1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+
+@keyframes child1 {
+    from {
+        top: 100%;
+        right: 5%;
+    }
+
+    to {
+        top: 75%;
+        right: 10%;
+    }
+}
+
+@keyframes child2 {
+    from {
+        top: 100%;
+        left: 60%;
+    }
+
+    to {
+        top: 85%;
+        left: 65%;
+    }
+}
+
+@keyframes child3 {
+    from {
+        top: 100%;
+        left: 60%;
+    }
+
+    to {
+        top: 115%;
+        left: 65%;
+    }
+
+}
+
+
+.page-main3 .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.page-main3 .video video {
+    width: 95%;
+    border-radius: 30px;
+}
+
+.page-two {
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: blue; */
+    margin-top: 72%;
+}
+
+.moving-text {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.moving-text::-webkit-scrollbar {
+    display: none;
+}
+
+.moving-text .con {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.page-two .moving-text .con h2 {
+    font-size: 9vw;
+    display: inline-block;
+    /* background-color: lightblue; */
+}
+
+.moving-text .con .gola {
+    background-color: red;
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 5px 2vw;
+}
+
+
+@keyframes move {
+    from {
+        transform: translateX(10%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.page2-main {
+    position: relative;
+}
+
+.moving2-gol {
+    /* padding: 100px 0px 0px 120px; */
+    margin-left: 150px;
+}
+
+.moving2-gol .con-one {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    background-color: olivedrab;
+    filter: blur(20px);
+    margin-top: 220px;
+}
+
+.moving2-gol .con-two {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    background-color: olivedrab;
+    filter: blur(20px);
+    margin-top: 220px;
+    animation-name: con-two;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.moving2-gol .con-three {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    background-color: olivedrab;
+    filter: blur(20px);
+    margin-top: 220px;
+    animation-name: con-one;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes con-one {
+    from {
+        top: -12%;
+    }
+
+    to {
+        top: 12%;
+    }
+}
+
+@keyframes con-two {
+    from {
+        left: 15%;
+    }
+
+    to {
+        left: 20%;
+    }
+
+}
+
+.page2-center {
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 80px 0px 80px;
+}
+
+.page2-main .page-right h3 {
+    width: 720px;
+    font-size: 4.8vw;
+    line-height: 5vw;
+    letter-spacing: -2px;
+}
+
+.page2-main .page-left {
+    margin-top: 150px;
+}
+
+.page2-main .page-left img {
+    width: 280px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.page2-main .page-left p {
+    width: 280px;
+    line-height: 18PX;
+    font-weight: 100;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.page-three {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 10%;
+}
+
+.page3-head {
+    /* background-color: red; */
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: olivedrab;
+    margin-bottom: 50px;
+}
+
+.page3-line {
+    background-color: olivedrab;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.page3-head h5 {
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "neue, sans-serif";
+}
+
+.elem-text {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.elem-text .elem2 {
+    /* background-color: red; */
+    border-bottom: 1px rgba(0, 0, 0, 0.32) solid;
+    /* border-top: 1px black solid; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.elem-text .elem2 h2 {
+    font-size: 4vw;
+
+}
+
+.elem-how {
+    width: 100%;
+    transition: 0.3s;
+    height: 100%;
+    background-color: rgb(150, 195, 60);
+    position: absolute;
+    left: 0px;
+    top: -100%;
+    z-index: -9;
+}
+
+.elem2:hover .elem-how {
+    top: 0%;
+}
+
+
+.fixed-elem {
+    width: 25%;
+    height: 65vh;
+    /* background-color: red; */
+    border-radius: 20px;
+    position: fixed;
+    top: 100px;
+    left: 66%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.page-four {
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: red; */
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.page4-head {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    height: 20px;
+    border: 1px rgba(0, 0, 0, 0.387) solid;
+    padding: 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.page4-head h3 {
+    font-size: 1.5vw;
+    color: rgba(0, 0, 0, 0.374);
+}
+
+.page4-head i {
+    color: rgba(0, 0, 0, 0.655);
+    margin-left: 20px;
+}
+
+
+.page4-main {
+    width: 100%;
+    height: 100vh;
+    border-radius: 20px;
+    background-color: black;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.page4-main .page4-right {
+    padding: 100px;
+    color: rgba(231, 219, 219, 0.635);
+}
+
+.page4-main .page4-right h3 {
+    font-size: 5.5vw;
+    line-height: 70px;
+}
+
+.page4-main .page4-right p {
+    width: 90%;
+    color: rgba(255, 254, 254, 0.908);
+    margin-top: 40px;
+    font-weight: 100;
+}
+
+.page4-main .page4-left img {
+    width: 700px;
+    height: 100vh;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+.page-five {
+    width: 100%;
+    height: 100vh;
+    background-color: #efeae3; 
+}
+.page-contain{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 50px 70px;
+    /* background-color: red; */
+}
+.page-contain .page-five-line{
+    width: 9px;
+    height: 9px;
+    background-color: orangered;
+    border-radius: 50px;
+}
+.page-contain h4{
+    font-size: 13px;
+    font-weight: 300;
+}
+.sup-swip{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.swipper-page{
+    width: 20%;
+    height: 60vh;
+    padding: 20px;
+    /* background-color: red; */
+    border-left: 1px rgba(0, 0, 0, 0.27) solid;
+    margin-left: 70px;
+    display: flex;
+}
+
+.swipper-page .swipe-elem img{
+    width: 50%;
+    height: 35%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    /* margin-left: 10px; */
+}
+
+.swipper-page .swipe-elem h5{
+    /* text-align: center; */
+    margin-top: 20px;
+
+}
+
+
+
+
+.page-six {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.869);
+    color: #efeae3;
+    position: relative;
+}
+
+.page-six .work1{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+.work1 .con1{
+
+    padding: 20px 100px;
+}
+.work1 .con1 h3{
+    font-size: 2.3vw;
+}
+
+.work1 .con2 h4{
+    width: 500px;
+    font-size: 1.5vw;
+    padding: 20px 100px;
+}
+
+.page-six .work2 h1{
+    font-size: 23vw;
+    padding: 20px 30px 0px 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.page-six .work2 .work2-lin{
+    height: 1px;
+    width: 95%;
+    margin-left: 2.5%;
+    background-color: rgba(255, 255, 255, 0.399);
+}
+
+.page-six .six-move1{
+    width: 40%;
+    height: 250px;
+    background-color: rgb(255, 68, 0);
+    position: absolute;
+    animation-name: six-move1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(50px);
+    z-index: 1;
+}
+.page-six .six-move2{
+    width: 60%;
+    z-index: 1;
+    height: 200px;
+    background-color: rgb(255, 68, 0);
+    position: absolute;
+    filter: blur(50px);
+}
+.page-six .six-move3{
+    width: 60%;
+    z-index: 1;
+    height: 200px;
+    background-color: rgb(255, 68, 0);
+    position: absolute;
+    animation-name: six-move3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(50px);
+}
+.page-six .six-sove1{
+    width: 40%;
+    height: 250px;
+    background-color: rgb(255, 68, 0);
+    position: absolute;
+    right: 0;
+    animation-name: six-sov1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(50px);
+}
+.page-six .six-sove2{
+    width: 60%;
+    height: 300px;
+    background-color: rgb(255, 68, 0);
+    position: absolute;
+    right: 0;
+    animation-name: six-sov2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(50px);
+}
+.page-six .six-sove3{
+    width: 60%;
+    height: 300px;
+    background-color: rgb(255, 68, 0);
+    position: absolute;
+    right: 0;
+    filter: blur(50px);
+  
+}
+
+
+@keyframes six-move1 {
+    from{
+        top: 0;
+    }
+    to{
+        top: 20%;
+    
+    }
+}
+@keyframes six-move2 {
+    from{
+        left: 0;
+    }
+    to{
+        left: 10%;
+    
+    }
+}
+
+@keyframes six-move3 {
+    from{
+        top: 0;
+        left: 0;
+    }
+    to{
+        top: 10%;
+        left: 10%;
+    
+    }
+}
+
+@keyframes six-sov1 {
+    from{
+        top: 0;
+      
+    }
+    to{
+        top: 20%;
+        
+    
+    }
+}
+
+
+
+@keyframes six-sove2 {
+    from{
+        top: 0;
+        right: 0;
+    }
+    to{
+        top: 10%;
+        right: 10%;
+    
+    }
+}
+
+
+
+/* 
+@media (max-width:430px) {
+    .main{
+        background-color: red;
+    }
+    
+} */
